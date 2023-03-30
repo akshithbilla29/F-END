@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function validateForm() {
+                var password = document.forms["loginForm"]["password"].value;
+                if (password == "billa") {
+				window.location.href = "task28.html";
+				return false;
+			} else {
+				alert("Invalid Passcode");
+				return false;
+			}
+		}
+        </script>
+        <title></title>
+    </head>
+    <body>
+        <form name="loginForm" onsubmit="return validateForm()" align="center">
+            <label for="password"><h1>Enter the passcode to acess:</h1></label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <label for="dropdown">Select a subject:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="select">select</option>
+            <option value="maths">Maths</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+        </select>
+        <script>
+            var dropdown = document.getElementById("dropdown");
+            dropdown.onchange = function() {
+                var subject = dropdown.options[dropdown.selectedIndex].value;
+                if (subject == "maths") {
+                    window.location.href = "background image position.html";
+                } else if (subject == "physics") {
+                    window.location.href = "table1.html";
+                } else if (subject == "chemistry") {
+                    window.location.href = "task29.html";
+                }
+            }
+        </script>
+    </body>
+</html>
