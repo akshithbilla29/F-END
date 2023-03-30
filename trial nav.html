@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <script>
+            const enable = (e) => {
+                document.getElementById("burger").classList.toggle("open")
+                document.getElementById("nav").classList.toggle("nav-open")
+            }
+        </script>
+        <style>
+                header{
+        top:0;
+        position:relative;
+        display:flex;
+        align-items:stretch;
+    }
+    .nav{
+        position:fixed;
+        right:0;
+        width:16vw;
+        top:0;
+        display:flex;
+        flex-direction: column;
+        height:100%;
+        background-color: #2005a7;
+        z-index: 100;
+        align-items:stretch;
+        gap:2rem;
+        transform: translateX(100%);
+        transition: all 0.2s;
+        box-shadow: 0px 0px 4px rgba(234, 5, 5, 0.25);
+        opacity:0.9;
+        padding-left:3%;
+    }
+    .nav-open{
+        transform:translateX(0%);
+    }
+    .nav a{
+        color: inherit;
+        text-decoration: none;
+        display:flex;
+        align-items:center;
+    }
+    .nav li{
+        list-style:none;
+        font-size:1.39vw;
+        padding:0;
+        color:white;
+    }
+    .nav li:nth-child(1){
+        margin-top:20vh;
+    }
+    #burger{
+        width:3vw;
+        height:3vw;
+        position:absolute;
+        margin-right:0;
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transition:rotate(0deg);
+        transform:rotate(0deg);
+        -webkit-transform-origin: center;
+        -moz-transform-origin: center;
+        -ms-transform-origin: center;
+        -o-transform-origin: center;
+        transform-origin: center;
+        cursor:pointer;
+        right:7vw;
+        z-index:1000;
+        top:9.5vh;
+    }
+
+    
+    #burger span{
+        display:block;
+        position:absolute;
+        height:10%;
+        width:100%;
+        background: #0b0b0a;
+        border-radius:9px;
+        opacity:1;
+        left:0;
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transition:rotate(0deg);
+        transform:rotate(0deg);
+        -webkit-transform:.25 ease-in-out;
+        -moz-transform:.25 ease-in-out;
+        -o-transition:.25 ease-in-out;
+        transform:.25 ease-in-out;
+    }
+        #burger span:nth-child(1) {
+            top:0px;
+        }
+        #burger span:nth-child(2),
+        #burger span:nth-child(3) {
+            top:10px;
+        }
+        #burger span:nth-child(4) {
+            top:20px;
+        }
+        #burger.open span:nth-child(1){
+        top:0px;
+        width:0%;
+        left:0;
+        }
+        #burger.open span:nth-child(2){
+            -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        -o-transition:rotate(45deg);
+        transform:rotate(45deg);
+        }
+        #burger.open span:nth-child(3){
+            -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(-45deg);
+        -o-transition:rotate(-45deg);
+        transform:rotate(-45deg);
+        }
+        #burger.open span:nth-child(4){
+           top:0;
+           width:0%;
+           left:0;
+        }
+        h5{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+           position:absolute;bottom:0px;
+        }
+
+  
+
+          div{
+                width: 100px;                       /*code incomplete*/
+                height: 100px;
+                background: red;
+                position: relative;
+                animation-name: ptt;
+                animation-duration: 6s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            @keyframes ptt{
+                0%{background:red ;left:0px ;top:0px ;}
+                25%{background:yellow ;left:200px ;top:0px;}
+                50%{background:blue ;left:200px ;top:200px;}
+                70%{background:rgb(0, 128, 128) ;left:0px ;top:200px;}
+                100%{background:rgb(84, 31, 31) ;left:0px ;top:0px ;}
+            
+            }
+      
+            
+     
+            body{
+                background-color:rgb(114, 120, 126);
+            }
+        </style>
+        <title>F-End</title>
+    </head>
+    <header>
+        <header>
+            <div id="burger" onclick="enable()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav" id="nav">
+            <li>
+                <a href="http://youtube.com">youtube</a>
+            </li>
+            <li>
+                <a href="http://instagram.com">instagram</a>
+            </li>
+            <li>
+                <a href="http://facebook.com">facebook</a>
+            </li>
+            <li>
+                <a href="http://youtube.com">youtube</a>
+            </li>
+        </nav>
+        </header>
+    </header>
+    <body><a href="qrcode.html"><img src="qrgif.gif" style="width:75px;height: 75px;"align="right"></a>
+        <h1 align="center"><b>Web Development.</b></h1>
+        <h2 align="center">
+            <a href="Page2.html"target="blank">HTML</a>
+            <a href="page3.html" target="_blank">|CSS</a>
+            <a href="task11.html"target="blank">|JavaScript</a>
+        </h2>
+        <h2>What is HTML?</h2>
+        <li>HTML (HyperText Markup Language) is a markup language used to create and structure content on the web.</li><li>It is the standard language used to build websites and is essential for web development.</li> <br>
+        <img src="html image.jpg"style="width: 200px;height: 200px;">
+        <h4>Learn more about HTML<br><a href="Page2.html"><img src="start.gif.gif"style="width:95px;height: 100px;"></a></h4>
+        <hr>
+        <h2>What is CSS?</h2>
+       <li>CSS (Cascading Style Sheets) is a styling language used to describe the presentation of HTML (HyperText Markup Language) documents, including their layout, fonts, colors, and other visual aspects.</li><li>CSS is essential for creating visually appealing and responsive.</li><br>
+       <div></div>
+       <br><br><br>
+       <br><br><br>
+       <br><br><br>
+       <br>
+       <h4>Learn more about CSS <br><a href="page3.html"><img src="start.gif.gif"style="width:95px;height: 100px;"></a></h4>
+        <hr>
+        <h2>What is JavaaScript?</h2>
+        <li>JavaScript is a high-level programming language that is used to create interactive and dynamic websites.</li> <li>It is the most popular language for front-end web development and is also used for back-end development using technologies such as Node.js.
+
+        </li>
+    </body>
+</html>

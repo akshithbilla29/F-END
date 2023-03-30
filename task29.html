@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task29</title>
+        <style>
+            body {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="page1.html" method="get">
+            <table id="table1" border="1" align="center" bgcolor="indigo">
+                <tr>
+                    <th colspan="2" bgcolor="orange" width="50" align="left">Sign Up</th>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%" align="right"><font color="yellow">
+                        <label for="Enter name">Enter name</font></label>
+                    </td>
+                    <td width="50" align="left">
+                        <input type="text" id="text1" name="text1" placeholder="enter first name" pattern="[a-zA-Z]{1,8}">
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%" align="right"><font color="yellow">
+                        <label for="second name">second name</font></label>
+                    </td>
+                    <td width="50" align="left">
+                        <input type="text" id="text2" name="text2" placeholder="enter second name" pattern="[a-zA-Z]{1,8}">
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%" align="right"><font color="yellow">
+                        <label for="screen name">screen name</font></label>
+                    </td>
+                    <td width="50" align="left">
+                        <input type="text" id="text3" name="text3" placeholder="enter screen name" pattern="[a-zA-Z]{1,8}">
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%" align="right"><font color="yellow">
+                        <label for="Date of birth">Date of birth</font></label>
+                    </td>
+                    <td width="50" align="left">
+                        <input type="datetime-local" id="date" name="date">
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%" align="right"><font color="yellow">
+                        <label for="Gender">Gender</font></label>
+                    </td>
+                    <td width="50" align="left">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%" align="right"><font color="yellow">
+                        <label for="Country">Country</label>
+                    </td>
+                    <td width="50" align="left">
+                        <select name="country" id="country">
+                            <option value="USA">USA</option>
+                            <option value="INDIA">INDIA</option>
+                            <option value="JAPAN">JAPAN</option>
+                            <option value="ITALY">ITALY</option>
+                            <option value="GERMANY">GERMANY</option>
+                        
+ </font>
+                        </select>
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%"align="right"><font color="yellow">
+                        <label for="email">email</font></label><td width="50"align="left">
+                        <input type="email"id="text7"name="text7"placeholder="enter email">
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%"align="right"><font color="yellow">
+                        <label for="Phone">Phone</font></label><td width="50"align="left">
+                        <input type="number"id="text8"name="text8"placeholder="enter Phone"pattern={0-9}>
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%"align="right"><font color="yellow">
+                        <label for="password">password</font></label><td width="50"align="left">
+                        <input type="password"pattern=characters{0-8}[a-z]>
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%"align="right"><font color="yellow">
+                        <label for="password">Confirm password</font></label><td width="50"align="left">
+                        <input type="password"pattern=characters{0-8}[a-z]>
+                    </td>
+                </tr>
+                <tr bgcolor="indigo">
+                    <td width="20%"align="right"><font color="yellow">
+                   <td align="left"> 
+                    <input type="checkbox">I agree to the terms of use</td>
+                </tr>
+                <tr>
+                    <td width="20%"align="left">
+                    <td align="left"> <input type="submit"></td>
+                 </tr>
+            
+            </form>     
+        </table>
+    </body>
+</html>
