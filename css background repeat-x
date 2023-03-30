@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url("srulogo.jpg");
+                background-repeat: repeat-x;
+            }
+        </style>
+        <title>background image</title>
+    </head>
+    <body>
+        <h1>SR University</h1>
+        <p>Here, a background image is repeated only vertically</p>
+    </body>
+</html>
