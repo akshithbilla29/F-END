@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            div{
+                width: 200px;                       /*code incomplete*/
+                height: 200px;
+                background: red;
+                position: relative;
+                animation-name: ptt;
+                animation-duration: 6s;
+                animation-direction: alternate;
+            }
+            @keyframes ptt{
+                0%{background-image:url("srulogo.jpg");left:0px ;top:0px ;}
+                25%{background-image:url("srulogo.jpg");left:200px ;top:0px;}
+                50%{background-image:url("srulogo.jpg") ;left:200px ;top:200px;}
+                70%{background-image:url("srulogo.jpg") ;left:0px ;top:200px;}
+                100%{background-image:url("srulogo.jpg");left:0px ;top:0px ;}
+            
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>The animation-direction property</h1>
+       <p>play animatiuons forward first,then bacckwards</p> 
+       <div></div>
+    </body>
+</html>
