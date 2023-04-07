@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<h:table xmlns:h="https://www.youtube.com/TR/html4/">
+    <h:tr>
+        <h:td>Aries</h:td>
+        <h:td>Bingo</h:td>
+    </h:tr>
+    </h:table>
+<f:table xmlns:f="https://www.google.com/google">
+    <f:name>Computer table</f:name>
+    <f:width>40</f:width>
+    <f:length>233</f:length>
+</f:table>
+</root>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book category="cooking">
+        <title lang="en">Everyday Italian</title>
+        <author>GDEQ</author>
+        <year>2003</year>
+        <price>23.99</price>
+        </book>
+     <book category="children">
+        <title lang="en">THEday lian</title>
+        <author>POUQ</author>
+        <year>2007</year>
+        <price>27.99</price>
+        </book>   
+        <book category="web">
+            <title lang="en">dgdtgdian</title>
+            <author>WKDI</author>
+            <year>20089</year>
+            <price>24.99</price>
+            </book>       
+            <book category="web" cover="paperback">
+                <title lang="en">learning xml</title>
+                <author>WKDI</author>
+                <year>20012</year>
+                <price>21.99</price>
+                </book>         
+</bookstore>        

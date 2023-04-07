@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE address[
+ <!ELEMENT address (#PCDATA)>
+ <!ENTITY name "AKSHITHBILLA">
+ <!ENTITY college "SR UNIVERSITY">
+ <!ENTITY phone_no "3320404043">
+ ]>
+
+    <address>
+       &name;
+       &college;
+       &phone_no;
+    </address>

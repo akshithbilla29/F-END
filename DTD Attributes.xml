@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE adress[
+   <!ELEMENT adress (name)>
+   <!ELEMENT name (#PCDATA)>
+   <!ATTLIST name id CDATA "0">
+   ]>
+
+   <adress>
+      <name id="123">
+       AKSHITH
+       </name>
+    </adress>

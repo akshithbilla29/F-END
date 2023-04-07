@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE address [
+<!ELEMENT address (name,college,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT college (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+]>
+<address>
+    <name>AKSHITH</name>
+    <college>SRU</college>
+    <phone>8575656456456</phone>
+</address>

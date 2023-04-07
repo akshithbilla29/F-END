@@ -1,0 +1,4 @@
+<!ELEMENT address (name,college,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT college (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
