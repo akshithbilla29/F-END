@@ -1,34 +1,35 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="code.png">
-        <title>Home</title>
+        <title></title>
         <style>
-            body{
-                background-color: black;
-            }
-            video {
-                width: 100%;
-                height: 100%;
-            }
+           body {
+            background-image: url("page0img.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           
+           label {
+              color: brown;
+           }
         </style>
     </head>
     <body>
-       
-        <form align="center">
-            <label for="Drop-Down" style="color: brown;"><h2>Select a Course:</h2></label>
-            <select name="Drop-Down" id="Drop-Down" style="width: 200px;" size="1" >
-    
+        <form>
+            <label for="Drop-Down"><h2>Select a course:</h2></label>
+            <select name="Drop-Down" id="Drop-Down" style="width: 200px;" size="1">
                 <option value="None">None</option>
                 <option value="Front-End">Front-End</option>
                 <option value="XML">XML</option>
                 <option value="Python">Python</option>
                 <option value="C">C</option>
                 <option value="C++">C++</option>
-                
             </select>
-           </form> 
-           <script>
+        </form> 
+        <script>
             var dropdown = document.getElementById("Drop-Down");
             dropdown.onchange = function() {
                 var subject = dropdown.options[dropdown.selectedIndex].value;
@@ -49,17 +50,5 @@
                 }
             }
         </script>
-         <video controls autoplay muted>
-            <source src="bg1.mp4" type="video/mp4">
-            <source src="bg1.mp4" type="video/mp4">
-        </video>
-        <video controls autoplay muted>
-            <source src="bg1.mp4" type="video/mp4">
-            <source src="bg1.mp4" type="video/mp4">
-        </video>
-        <video controls autoplay muted>
-            <source src="bg1.mp4" type="video/mp4">
-            <source src="bg1.mp4" type="video/mp4">
-        </video>
     </body>
 </html>
