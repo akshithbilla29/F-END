@@ -1,65 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>F-End</title>
-	<link rel="icon" type="image/x-icon" href="code.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>F-End</title>
-	<link rel="stylesheet" href="external1.css">
-	<style>
-		img.center {
-			display: block;
-			margin: auto;
-		}
-		body{
-			background-image: url("indexbg.webp");
-			background-size: cover;
-			background-color: black;
-		}
-		label{
-			background-color: azure;
-		}
-		h1 {
-  font-family: Copperplate, Papyrus, fantasy
-}
-	</style>
-	<script>
-		function validateForm() {
-			var userId = document.forms["loginForm"]["user_id"].value;
-			var password = document.forms["loginForm"]["password"].value;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F-END</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
 
-			if (userId == "akshith" && password == "billa") {
-				window.location.href = "page0.html";
-				return false;
-			}else if (userId == "sam" && password == "cool") {
-				window.location.href = "page0.html";
-				return false;
-			} else {
-				alert("Invalid user ID or password.");
-				return false;
-			}
-		}
-	</script>
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+
+  .error {
+    color: red;
+    display: none;
+  }
+</style>
 </head>
 <body>
-	
-	<br><br>
-	<br><br>
-	<br><br>
-	<br><br>
-	<br><br>
-	
+<form id="loginForm">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button type="submit">Login</button>
+  <p class="error" id="errorMessage">Invalid username or password.</p>
+</form>
 
-	<h1 align="center"><span style="color:black"><b>F-END</b></span><img src="code.png" style="height: 42px;width: 42px;"></h1>
-	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Progressive_enhancement_web_design_pyramid_%28HTML%2C_CSS%2C_JS%29.svg/640px-Progressive_enhancement_web_design_pyramid_%28HTML%2C_CSS%2C_JS%29.svg.png" class="center" width="200px" height="190px">
-	<br><br>
-	<form name="loginForm" onsubmit="return validateForm()" align="center">
-		<label for="user_id">User ID:</label>
-		<input type="text" id="user_id" name="user_id" value="akshith"><br><br>
-		<label for="password">Password:</label>
-		<input type="password" id="password" name="password" value="billa"><br><br>
-		<input type="submit" value="Login">
-		<a href="task29.html">New? Create a New Account</a>
-	</form>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const correctUsername = 'akshith';
+  const correctPassword = 'billa';
+
+  const usernameInput = document.getElementById('username');
+  const passwordInput = document.getElementById('password');
+  const errorMessage = document.getElementById('errorMessage');
+
+  if (usernameInput.value === correctUsername && passwordInput.value === correctPassword) {
+    errorMessage.style.display = 'none';
+   
+    window.location.href ="page0.html";
+  } else {
+    errorMessage.style.display = 'block';
+  }
+});
+</script>
 </body>
 </html>
