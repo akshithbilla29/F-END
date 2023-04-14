@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<style>
+		body {
+  background-color:dimgray;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color:snow;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-color: black;
+  border-width: 2px; /* set border width to 2px */
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.error {
+  color: red;
+}
+
+	</style>
+	<script>
+		function validateForm() {
+			var firstName = document.forms["signupForm"]["firstName"].value;
+			var lastName = document.forms["signupForm"]["lastName"].value;
+			var email = document.forms["signupForm"]["email"].value;
+			var password = document.forms["signupForm"]["password"].value;
+			var confirmPassword = document.forms["signupForm"]["confirmPassword"].value;
+
+			if (firstName == "") {
+				document.getElementById("firstNameError").innerHTML = "First name is required";
+				return false;
+			}
+
+			if (lastName == "") {
+				document.getElementById("lastNameError").innerHTML = "Last name is required";
+				return false;
+			}
+
+			if (email == "") {
+				document.getElementById("emailError").innerHTML = "Email is required";
+				return false;
+			}
+
+			if (password == "") {
+				document.getElementById("passwordError").innerHTML = "Password is required";
+				return false;
+			}
+
+			if (confirmPassword == "") {
+				document.getElementById("confirmPasswordError").innerHTML = "Please confirm password";
+				return false;
+			}
+
+			if (password != confirmPassword) {
+				document.getElementById("confirmPasswordError").innerHTML = "Passwords do not match";
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Signup</h1>
+	<form name="signupForm" onsubmit="return validateForm()">
+	<label for="firstName">First Name:</label>
+	<input type="text" name="firstName" id="firstName">
+	<span class="error" id="firstNameError"></span>
+
+	<label for="lastName">Last Name:</label>
+	<input type="text" name="lastName" id="lastName">
+	<span class="error" id="lastNameError"></span>
+
+	<label for="password">Password:</label>
+	<input type="password" name="password" id="password">
+	<span class="error" id="passwordError"></span>
+
+	<label for="confirmPassword">Confirm Password:</label>
+	<input type="password" name="confirmPassword" id="confirmPassword">
+	<span class="error" id="confirmPasswordError"></span>
+
+	<input type="submit" value="Signup" onclick="window.location.href='page0.html'; return false;">
+</form>
+
+</body>
+</html>
