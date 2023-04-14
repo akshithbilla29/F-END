@@ -12,6 +12,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color:grey;
   }
 
   form {
@@ -21,6 +22,7 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color:#7AA874;
   }
 
   input {
@@ -37,25 +39,34 @@
     background-color: #007bff;
     color: white;
     border: none;
+    margin-top: 10px;
   }
 
   .error {
     color: red;
     display: none;
   }
+  button.signup {
+    margin-top: 10px;
+    background-color: #000000;
+  }
+
 </style>
 </head>
 <body>
-<form id="loginForm">
-  <h2>Login</h2>
-  <input type="text" id="username" placeholder="Username">
-  <input type="password" id="password" placeholder="Password">
-  <button type="submit">Login</button>
-  <p class="error" id="errorMessage">Invalid username or password.</p>
-</form>
+  <form id="loginForm">
+    <h2>F-END</h2>
+    <input type="text" id="username" placeholder="Username" value="akshith">
+    <input type="password" id="password" placeholder="Password" value="billa">
+    <button type="submit">Login</button>
+  
+    <p class="error" id="errorMessage">Invalid username or password.</p>
+    <button class="signup" onclick="window.location.href='signup.html';">Signup</button>
+  </form>
+  
 
-<script>
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+  <script>
+   document.getElementById('loginForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
   const correctUsername = 'akshith';
@@ -67,12 +78,17 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
   if (usernameInput.value === correctUsername && passwordInput.value === correctPassword) {
     errorMessage.style.display = 'none';
-   
-    window.location.href ="page0.html";
+    window.location.href = "page0.html";
   } else {
     errorMessage.style.display = 'block';
   }
 });
-</script>
+
+document.querySelector('.signup').addEventListener('click', function() {
+  window.location.href = "signup.html";
+});
+
+  </script>
+  
 </body>
 </html>
