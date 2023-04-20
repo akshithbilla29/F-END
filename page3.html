@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script src="page3script.js"></script>
         <link rel="icon" type="image/x-icon" href="code.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CSS</title>
@@ -13,50 +14,55 @@
     <body>
         <a href="page1.html"><img src="leftbackicon.png" style="height: 40px;width: 40px;"></a>
         <h1 align="center"><i>CSS</i></h1>
-       <h5> Background image position <a href="background image position.html">Click Here</a><br>
-        css animation direction<a href="css animation direction.html">Click Here</a><br>
-        css animations ex1<a href="css animations ex1.html">Click Here</a><br>
-        css animations-direction images <a href="css animations-direction images.html">Click Here</a><br>
-        css animations-fill-mode<a href="css animations-fill-mode.html">Click Here</a> <br>  
-        css animation-timing-functions<a href="css animation-timing-functions.html">Click Here</a><br>
-        css background attachment<a href="css background attachment.html">Click Here</a><br>
-        css background color<a href="css background color.html">Click Here</a><br>
-        css background image<a href="css background image.html">Click Here</a><br>
-        css background repeat<a href="css background repeat.html">1Click Here</a><br>
-        css background repeat-x <a href="css background repeat-x">Click Here</a><br>
-        css background repeat-y<a href="css background repeat-y.html">Click Here</a><br>
-        css border color<a href="css border color.html">Click Here</a><br>
-        css class selector<a href="css class selector.html">Click Here</a><br>
-        css colors <a href="css colors.html">Click Here</a><br>
-        css element selector<a href="css element selector.html">Click Here</a><br>
-        css fonts<a href="css fonts.html">Click Here</a><br>
-        css grouping selector<a href="css grouping selector.html">Click Here</a><br>
-        css hex value<a href="css hex value.html">Click Here</a><br>
-        css hsl colors<a href="css hsl colors.html">Click Here</a><br>
-        css id selector<a href="css id selector.html">Click Here</a><br>
-        css individual padding<a href="css individual padding.html">Click Here</a><br>
-        css overflow property<a href="css overflow property.html">Click Here</a><br>
-        css position property <a href="css position property.html">Click Here</a><br>
-        css RGB colors <a href="css RGB colors.html">Click Here</a><br>
-        css rounded corners <a href="css rounded corners.html">Click Here</a><br>
-        css transitions ex1<a href="css transitions ex1.html">Click Here</a><br>
-        ss transitions ex2<a href="css transitions ex2.html">Click Here</a><br>
-        css transitions ex3<a href="css transitions ex3.html">Click Here</a><br>
-        css Universal selector <a href="css Universal selector.html">Click Here</a><br>
-        external css1<a href="external css1.html">Click Here</a><br>
-        external css2<a href="external css2.html">Click Here</a><br>
-        Inline css<a href="inline css.html">Click Here</a><br>
-        Internal css1 <a href="internal css1.html">Click Here</a><br>
-        Internal css2<a href="internal css2.html">Click Here</a><br>        
-        oveerflow-y<a href="oveerflow-y.html">Click Here</a><br>
-        overflow-x <a href="overflow-x.html">Click Here</a><br>
-        padding bottom<a href="padding bottom.html">Click Here</a><br>
-        padding shorthand-3 values <a href="padding shorthand-3 values.html">Click Here</a><br>
-        padding shorthand-4values <a href="padding shorthand-4values.html">Click Here</a><br>
-        padding with2 <a href="padding with2 .html">Click Here</a><br>
-        padding-left  <a href="padding-left.html">Click Here</a><br>
-        padding-right<a href="padding-right.html">Click Here</a><br>
-        padding-top<a href="padding-top.html">Click Here</a><br>
-        shades of gray color<a href="shades of gray color.html">Click Here</a><br></h5>
+        <label for="search">Search:</label>
+    <input type="text" id="search" onkeyup="searchNames()" placeholder="Search list...">
+       <h5>
+        <ul id="names">
+        <li> Background image position <a href="background image position.html">Click Here</a></li>
+        <li> css animation direction<a href="css animation direction.html">Click Here</a></li>
+        <li> css animations ex1<a href="css animations ex1.html">Click Here</a><br></li>
+      <li>  css animations-direction images <a href="css animations-direction images.html">Click Here</a><br></li>
+       <li> css animations-fill-mode<a href="css animations-fill-mode.html">Click Here</a> <br>  </li>
+       <li> css animation-timing-functions<a href="css animation-timing-functions.html">Click Here</a><br></li>
+       <li> css background attachment<a href="css background attachment.html">Click Here</a><br></li>
+       <li> css background color<a href="css background color.html">Click Here</a><br></li>
+       <li> css background image<a href="css background image.html">Click Here</a><br></li>
+       <li> css background repeat<a href="css background repeat.html">1Click Here</a><br></li>
+       <li> css background repeat-x <a href="css background repeat-x">Click Here</a><br></li>
+       <li> css background repeat-y<a href="css background repeat-y.html">Click Here</a><br></li>
+       <li> css border color<a href="css border color.html">Click Here</a><br></li>
+       <li> css class selector<a href="css class selector.html">Click Here</a><br></li>
+       <li> css colors <a href="css colors.html">Click Here</a><br></li>
+       <li> css element selector<a href="css element selector.html">Click Here</a><br></li>
+       <li> css fonts<a href="css fonts.html">Click Here</a><br></li>
+       <li> css grouping selector<a href="css grouping selector.html">Click Here</a><br></li>
+       <li> css hex value<a href="css hex value.html">Click Here</a><br></li>
+       <li> css hsl colors<a href="css hsl colors.html">Click Here</a><br></li>
+       <li> css id selector<a href="css id selector.html">Click Here</a><br></li>
+        <li> css individual padding<a href="css individual padding.html">Click Here</a><br></li>
+        <li> css overflow property<a href="css overflow property.html">Click Here</a><br></li>
+        <li> css position property <a href="css position property.html">Click Here</a><br></li>
+        <li> css RGB colors <a href="css RGB colors.html">Click Here</a><br></li>
+        <li> css rounded corners <a href="css rounded corners.html">Click Here</a><br></li>
+        <li> css transitions ex1<a href="css transitions ex1.html">Click Here</a><br></li>
+        <li> ss transitions ex2<a href="css transitions ex2.html">Click Here</a><br></li>
+        <li> css transitions ex3<a href="css transitions ex3.html">Click Here</a><br></li>
+        <li> css Universal selector <a href="css Universal selector.html">Click Here</a><br></li>
+        <li> external css1<a href="external css1.html">Click Here</a><br></li>
+        <li> external css2<a href="external css2.html">Click Here</a><br></li>
+        <li> Inline css<a href="inline css.html">Click Here</a><br></li>
+        <li> Internal css1 <a href="internal css1.html">Click Here</a><br></li>
+        <li> Internal css2<a href="internal css2.html">Click Here</a><br>      </li>  
+        <li>oveerflow-y<a href="oveerflow-y.html">Click Here</a><br></li>
+        <li> overflow-x <a href="overflow-x.html">Click Here</a><br></li>
+       <li> padding bottom<a href="padding bottom.html">Click Here</a><br></li>
+       <li> padding shorthand-3 values <a href="padding shorthand-3 values.html">Click Here</a><br></li>
+       <li> padding shorthand-4values <a href="padding shorthand-4values.html">Click Here</a><br></li>
+       <li> padding with2 <a href="padding with2 .html">Click Here</a><br></li>
+      <li>  padding-left  <a href="padding-left.html">Click Here</a><br></li>
+      <li>  padding-right<a href="padding-right.html">Click Here</a><br></li>
+       <li> padding-top<a href="padding-top.html">Click Here</a><br></li>
+       <li> shades of gray color<a href="shades of gray color.html">Click Here</a><br></h5></li>
+    </ul>
     </body>
 </html>
