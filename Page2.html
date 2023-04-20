@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="icon" type="image/x-icon" href="code.png">
+        <script src="page2script.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML Applications</title>
         <style>
@@ -16,8 +17,11 @@
     <body>
         <a href="page1.html"><img src="leftbackicon.png" style="height: 40px;width: 40px;"></a>
       <h2 align="center"><b>HTML-Applications</b></h2>
-      <input type="search" style="width: 270px;"placeholder="search...">
-        <table>
+      <label for="search">Search:</label>
+    <input type="text" id="search" onkeyup="searchNames()" placeholder="Search list...">
+    
+        
+            <ul id="names">
             
       <h3>  <li>BIO-DATA <a href="Task-1.html">Go</a><br></li>
         <li>UnOrdered List-1 <a href="task2.html">Go</a><br></li>
@@ -47,7 +51,8 @@
         <li> Fieldset<a href="task26.html">Go</a><br></li>
         <li> INPUT TYPES<a href="task27.html">Go</a><br></li>
         <li> Registration Form<a href="locked.html">Go</a><br></li></h3>
-    </table>
+    </ul>
+    
     
     </body>
 </html>
