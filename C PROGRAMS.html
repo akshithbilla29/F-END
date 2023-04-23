@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-HOME</title>
+    <style>
+      body{
+        background-color: burlywood;
+      }
+    </style>
+    <script>
+      function searchNames() {
+        let input = document.getElementById("search").value.toLowerCase();
+        let names = document.getElementsByTagName("li");
+        for (let i = 0; i < names.length; i++) {
+          let name = names[i].textContent.toLowerCase();
+          if (name.indexOf(input) > -1) {
+            names[i].style.display = "";
+          } else {
+            names[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>List of C-Programs:</h2> 
+    <label for="search">Search:</label>
+    <input type="text" id="search" onkeyup="searchNames()" placeholder="Search list..."> 
+    <ul>
+      <li>Calculating Grade of a student in C-<a href="grade of a student.html">ClickHere</a></li>
+      
+    </ul>
+  </body>
+</html>

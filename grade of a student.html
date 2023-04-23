@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grade of a student.c</title>
+        <style>
+            body{
+                background-color: #8c7373;
+                
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>C Program on calculation of grade of a student:</h2>
+ <pre>
+#include [stdio.h]
+int main() 
+{
+  int score;
+  printf("Enter the student's score: ");
+  scanf("%d", &score);        
+  if (score >= 90) 
+  {
+    printf("Grade: A\n");
+  } else if (score >= 80)
+  {
+    printf("Grade: B\n");
+  } else if (score >= 70) {
+   printf("Grade: C\n");
+  } else if (score >= 60) {
+    printf("Grade: D\n");
+  } else {
+    printf("Grade: F\n");
+}
+return 0;
+}                
+</pre>
+        <label for="marks"><h3>Enter marks for each subject separated by commas:</h3></label>
+        <input type="text" id="marks" name="marks"><br>
+      
+        <button onclick="calculateGrade()">Run the Code</button>
+      
+        <div id="output"></div>
+      
+        <script>
+          function calculateGrade() {
+            
+            var marks = new Array(5);
+            var total = 0;
+            var percentage;
+            var grade;
+      
+            
+            var marksInput = document.getElementById("marks").value;
+            marks = marksInput.split(",");
+      
+            for (var i = 0; i < 5; i++) {
+              total += parseFloat(marks[i]);
+            }
+      
+            
+            percentage = total / 5.0;
+      
+            
+            if (percentage >= 90) {
+              grade = 'A';
+            } else if (percentage >= 80) {
+              grade = 'B';
+            } else if (percentage >= 70) {
+              grade = 'C';
+            } else if (percentage >= 60) {
+              grade = 'D';
+            } else if (percentage >= 40) {
+              grade = 'E';
+            } else {
+              grade = 'F';
+            }
+      
+           
+            var output = document.getElementById("output");
+            output.innerHTML = "Percentage: " + percentage.toFixed(2) + "%<br>";
+            output.innerHTML += "Grade: " + grade;
+          }
+        </script>
+        
+    </body>
+</html>
