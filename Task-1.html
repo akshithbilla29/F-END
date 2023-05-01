@@ -1,5 +1,24 @@
 <html>
     <head>       <title>Profile</title>
+        <style>
+		body {
+			user-select: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-khtml-user-select: none;
+			-o-user-select: none;
+		}
+	</style>
+        <script>
+		// Disable right-click menu
+		document.addEventListener("contextmenu", function(e){
+			e.preventDefault();
+			alert("Sorry ! Right Click No Access.");
+		}, false);
+	</script>
+        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
         <body >
             <a href="page1.html"><img src="leftbackicon.png" style="height: 40px;width: 40px;"></a>
